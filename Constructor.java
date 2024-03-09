@@ -13,7 +13,9 @@ class demo {
 
 public class Constructor {
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         demo d1 = new demo(4, 5);
+        @SuppressWarnings("unused")
         demo d2 = new demo(55, 44);
     }
 }
