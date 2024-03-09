@@ -2,7 +2,7 @@ class Example {
     int x, y;
 
     void Function(int x, int y) {
-        this.x = x; // This is used for current refer
+        this.x = x; // This is used for current reference
         this.y = y;
     }
 
