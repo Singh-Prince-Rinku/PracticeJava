@@ -13,6 +13,8 @@ class Vivo extends Samsung{
 }
 public class Inheritance {
     public static void main(String[] args) {
-        
+        Vivo V1 = new Vivo();
+        V1.resolution();
+        V1.display();
     }
 }
