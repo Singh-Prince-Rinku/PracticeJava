@@ -12,9 +12,9 @@ public class Experiment {
                 for (int k = 0; k < threeDArray[i][j].length; k++) {
                     System.out.print(threeDArray[i][j][k] + " ");
                 }
-                System.out.println();
+                System.out.println(); // Move to next line after printing each row
             }
-            System.out.println();
+            System.out.println(); // Add an empty line after printing each 2D array
         }
     }
 }
