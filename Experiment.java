@@ -1,19 +1,23 @@
+class PerimeterOfRectangle {
+    private int x, y;
+    private int z;
+
+    public void Area(int x, int y) {
+        this.x = x;
+        this.y = y;
+        this.z = 2 * (x + y);
+    }
+
+    void display() {
+        System.out.println("Perimeter of Rectangle: " + z);
+        System.out.println("Area of Rectangle: " + x * y);
+    }
+}
+
 public class Experiment {
     public static void main(String[] args) {
-        int[][][] threeDArray = {
-            { {1, 2}, {3, 4} },
-            { {5, 6}, {7, 8} }
-        };
-
-        // Accessing and printing elements of the 3D array
-        for (int i = 0; i < threeDArray.length; i++) {
-            for (int j = 0; j < threeDArray[i].length; j++) {
-                for (int k = 0; k < threeDArray[i][j].length; k++) {
-                    System.out.print(threeDArray[i][j][k] + " ");
-                }
-                System.out.println(); // Move to next line after printing each row
-            }
-            System.out.println(); // Add an empty line after printing each 2D array
-        }
+        PerimeterOfRectangle p = new PerimeterOfRectangle();
+        p.Area(3, 4);
+        p.display();
     }
 }
