@@ -1,23 +1,22 @@
-class PerimeterOfRectangle {
-    private int x, y;
-    private int z;
-
-    public void Area(int x, int y) {
-        this.x = x;
-        this.y = y;
-        this.z = 2 * (x + y);
-    }
-
-    void display() {
-        System.out.println("Perimeter of Rectangle: " + z);
-        System.out.println("Area of Rectangle: " + x * y);
+class process1 extends Thread{
+    public void run(){
+        for (int i = 0; i<=10; i++){
+            System.out.println(i);
+        }
     }
 }
-
-public class Experiment {
+class process2 extends Thread {
+    public void run(){
+        for (int i = 0; i<=10; i++){
+            System.out.println(i);
+        }
+    }
+}
+class Experiment{
     public static void main(String[] args) {
-        PerimeterOfRectangle p = new PerimeterOfRectangle();
-        p.Area(3, 4);
-        p.display();
+        process1 p1 = new process1();
+        process2 p2 = new process2();
+        p1.start();
+        p2.start();
     }
 }
